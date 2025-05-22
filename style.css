@@ -12,15 +12,15 @@ body{
     justify-content: center;
 }
 .info-container{
-    display: flex;
+      display: flex;
     justify-content: space-between;
-     justify-self: center;
-    width: 650px;
+    width: 450px;
     background-color: rgb(255, 255, 255);
     padding: 30px;
     border-radius: 15px;
     border: solid rgb(28, 28, 133) 6px;
     margin: 20px auto;
+    justify-self: center;
     font-size: 30px;
 
 }
