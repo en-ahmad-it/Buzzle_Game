@@ -44,8 +44,8 @@ let wrong=0;
 let arr=[];
 let win=0;
 
-// let name1=prompt("Entre Your Name");
-// spanname.innerHTML=name1;
+ let name1=prompt("Entre Your Name");
+ spanname.innerHTML=name1;
 let imagesdiv=document.querySelectorAll(".image .front");
 imagesdiv.forEach((img)=>{
 img.classList.add("show");
