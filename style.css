@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    zoom: 0;
+}
+body{
+    background-color: rgb(110, 110, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-container{
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 15px;
+    border: solid rgb(28, 28, 133) 6px;
+    margin: 20px;
+    font-size: 30px;
+}
+.gameBord{
+
+    width:800px ;
+    margin: auto;
+}
+.gameBord>div{
+    width: 680px;
+    margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17% 17%;
+    gap: 5px;
+}
+.image{
+    width: 110px;
+    height: 110px;
+position: relative;
+transform-origin: center center;
+transform-style:preserve-3d;
+transition: 1s;
+perspective: 800px;
+}
+.gameBord .image img{
+width: 110px;
+height: 100px;
+
+}
+.image div{
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+    .image .front{z-index: 2;
+
+    }
+    .image .front{
+        background-color: rgb(61, 255, 190);
+        /* width: 100%; */
+width: 110px;
+height: 100px;
+        transform: rotatey(-180deg);
+    }
+    .show{
+                transform: rotatey(0) !important;
+
+    }
+    .back h1{
+        display: block;
+        align-items: center;
+        text-align: center;
+width: 110px;
+        background-color: rgb(61, 255, 190);
+font-size: 100px;
+        height: 100px;
+    }
+    .image{ 
+    
+transform-origin: center center;
+transform-style:preserve-3d;
+transition: 1s;
+perspective: 800px;
+    }
+    .image:hover{
+        scale: 1.1;
+    }
+    .rotate{
+         transform: rotatey(-180deg);
+    }
+button{
+    
+    display: block;
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 30px;
+    width: 200px;
+    border-radius: 20px;
+}
